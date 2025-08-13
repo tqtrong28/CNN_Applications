@@ -4,7 +4,7 @@ Trong xử lý ảnh, mỗi ảnh có hàng ngàn pixels, mỗi pixel được x
 bức ảnh có kích thước 1000 * 1000, thì sẽ có 1.000.000 features. Với normal feed-forward neural net-
 works, mỗi layer là full-connected với previous input layer. Trong normal feed-forward neural network,
 với mỗi layer, có 1.000.000 pixels, mỗi pixel lại kết nối full-connected với 1.000.000 pixels ở layer trước,
-tức sẽ có 1012 tham số. Đây là còn số quá lớn để có thể tính được vào thời điểm đó, bởi vì với mô hình
+tức sẽ có 10^12 tham số. Đây là còn số quá lớn để có thể tính được vào thời điểm đó, bởi vì với mô hình
 có nhiều tham số, sẽ dễ bị overfitted và cần lượng lớn data cho việc training, ngoài ra còn cần nhiều
 memory và năng lực tính toán cho việc training và prediction.
 
